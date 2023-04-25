@@ -1,10 +1,10 @@
 # Alzheimer's Classification using 2D MRI Images with Deep Learning Techniques
 
-This repository contains the code and Jupyter Notebook for a deep learning model that classifies MRI brain images into three classes: Alzheimer's disease, Mild Cognitive Impairment (MCI), and non-dementia. The model is based on Convolutional Neural Networks (CNNs) and was developed using the Keras library with TensorFlow backend.
+This repository contains the code and Jupyter Notebook for a deep learning model that classifies MRI brain images into three classes: Very Mild Demented, Mild Demented, Non Demented. The model is based on Convolutional Neural Networks (CNNs) and was developed using the Keras library with TensorFlow backend.
 
 ## Dataset
 
-The dataset used in this study were MRI images that are open source on Kaggle repositories [16]. It has 4 different classes (Very Mild Demented - 2240, Mild Demented – 896, Moderate Demented - 64, Non Demented - 3200) consist of 6400 images in total. As Moderate Demented class was very small, to eradicate class imbalance, this class is being merged with the Mild Demented class, which finally brings up three-class problem for this study. The patient’s ages were not specified, and no additional information about them was supplied in the dataset. The image size in the dataset is 227*227. For this study, we split the dataset into three different sets. In the training set, it has 4480 images, the validation set consist of 1280 images and the test set consist of 640 images. The split ratio was 7:2:1 in between training, validation and test set.
+The dataset used in this study consists of MRI images of the brain. It has 3 different classes: Alzheimer's disease, Mild Cognitive Impairment (MCI), and non-dementia. The original dataset is available on Kaggle at the following link: https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images. The dataset was preprocessed and split into training, validation, and testing sets with a ratio of 80:10:10. The patient’s ages were not specified, and no additional information about them was supplied in the dataset. The image size in the dataset is 227*227. For this study, we split the dataset into three different sets. In the training set, it has 4480 images, the validation set consist of 1280 images and the test set consist of 640 images. The split ratio was 7:2:1 in between training, validation and test set.
 
 The data was preprocessed and split into training, validation, and testing sets with a ratio of 80:10:10. Figure 1 shows some sample MRI images from the dataset.
 
@@ -48,6 +48,4 @@ The models achieved promising results for the classification of Alzheimer's dise
 
 ## Acknowledgments
 
-- The Kaggle repositories [16] for providing the Alzheimer's Dataset used in this study.
 - The Keras and TensorFlow communities for providing the tools and resources to develop deep learning models.
-
